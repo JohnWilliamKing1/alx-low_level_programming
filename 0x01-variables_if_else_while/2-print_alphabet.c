@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the alphabetic 
+ * main - prints the alphabetic
  * Return: Always (Success)
  */
 int main(void)
