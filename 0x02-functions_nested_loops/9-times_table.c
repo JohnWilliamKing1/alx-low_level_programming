@@ -14,7 +14,7 @@ while (i < 10)
 j = 0;
 while (j < 10)
 {
-product = i * j;
+product = i *j;
 if (j == 0)
 {
 _putchar(product + '0');
