@@ -12,9 +12,9 @@ while (s[length] != '\0')
 {
 length++;
 }
-for (int i = length - 1; i >= 0; i--)
+for (length -= 1; length >= 0; length--)
 {
-putchar(s[i]);
+_putchar(s[length]);
 }
-putchar('\n');
+_putchar('\n');
 }
