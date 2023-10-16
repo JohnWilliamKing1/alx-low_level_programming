@@ -12,7 +12,7 @@ while (s[i++])
 length++;
 for (i = length - 1; i >= length / 2; i--)
 {
-temp = s[i];
+tmp = s[i];
 s[i] = s[length - i - 1];
 s[length - i - 1] = temp;
 }
