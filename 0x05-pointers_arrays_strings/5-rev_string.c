@@ -14,6 +14,6 @@ for (i = length - 1; i >= length / 2; i--)
 {
 tmp = s[i];
 s[i] = s[length - i - 1];
-s[length - i - 1] = temp;
+s[length - i - 1] = tmp;
 }
 }
