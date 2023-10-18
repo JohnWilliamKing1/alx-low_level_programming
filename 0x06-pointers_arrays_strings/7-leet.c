@@ -7,17 +7,30 @@
  */
 char *leet(char *str)
 {
-char leet_chars[] = "aAeEoOtTlL";
-char leet_nums[] = "4433007711";
-for (int i = 0; str[i] != '\0'; i++)
+int i = 0;
+char c;
+for (; str[i] != '\0'; i++)
 {
-for (int j = 0; leet_chars[j] != '\0'; j++)
+c = str[i];
+if (c == 'a' || c == 'A')
 {
-if (str[i] == leet_chars[j])
-{
-str[i] = leet_nums[j];
-break;
+str[i] = '4';
 }
+else if (c == 'e' || c == 'E')
+{
+str[i] = '3';
+}
+else if (c == 'o' || c == 'O')
+{
+str[i] = '0';
+}
+else if (c == 't' || c == 'T')
+{
+str[i] = '7';
+}
+else if (c == 'l' || c == 'L')
+{
+str[i] = '1';
 }
 }
 return (str);
