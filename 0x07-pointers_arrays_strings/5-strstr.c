@@ -10,26 +10,18 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	if (*needle == '\0')
+	for (; *haystack != '\0'; haystack++)
 	{
-		return (haystack);
-	}
-	char *haystack_pointer = haystack;
-	char *needle_pointer = needle;
+		char *haystack;
+		char *needle;
 
-	while (*haystack_pointer != '\0')
-	{
-		needle_pointer = needle;
-		while (*haystack_pointer == *needle_pointer)
+		while (*haystack == *needle && *needle != '\0')
 		{
-			if (*needle_pointer == '\0')
-			{
-				return (haystack_pointer);
-			}
-			haystack_pointer++;
-			needle_pointer++;
+			haystack++;
+			neddle++;
 		}
-		haystack_pointer++;
+		if (*needle == '\0')
+			return (haystack);
 	}
 	return (NULL);
 }
