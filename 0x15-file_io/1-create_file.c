@@ -20,8 +20,10 @@ for (len = 0; text_content[len];)
 len++;
 }
 return (-1);
+
 fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 w = write(fd, text_content, len);
+
 if (fd == -1 || w == -1)
 return (-1);
 close(fd);
